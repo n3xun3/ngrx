@@ -1,0 +1,14 @@
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <button class="btn btn-primary" (click)="spanishMensaje()">Cambiar Spanish</button>
+      <button class="btn btn-success" (click)="englishMensaje()">Cambiar English</button>
+    </div>
+    <div class="card-body">
+      <!--Asi entramos en la promesa y mostramaos el valor de la propiedad que queremos-->
+      <p>{{(dato$ | async)?.mensaje}}</p>
+      <p>{{(dato$ | async)?.payload}}</p>
+    </div>
+  </div>
+</div>
